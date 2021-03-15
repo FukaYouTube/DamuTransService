@@ -1,0 +1,227 @@
+@import './reset.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F3F3F3;
+}
+
+.wrapper {
+    padding: 20px 120px;
+}
+
+.wa-icon {
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: .5;
+    transition: .3s opacity;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px rgba($color: #000000, $alpha: .1);
+
+    .logo-items {
+        h1 {
+            font-size: 21px;
+            font-weight: 500;
+            color: #3C68AA;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 200;
+            color: #000000;
+        }
+    }
+
+    .main-menu {
+        ul li {
+            margin-left: 20px;
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                color: #000000;
+                transition: .3s color;
+
+                &:hover, &:active, &:focus {
+                    color: #3C68AA;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.main-container {
+    background-position: right 60px;
+    background-size: contain;
+    
+    background-repeat: no-repeat;
+    background-image: url("../../img/Group\ 4.png");
+
+    .title-text h1 {
+        color: #3B68AA;
+        font-size: 34px;
+        font-weight: 500;
+        margin-top: 130px;
+
+        span {
+            color: #777777;
+        }
+    }
+
+    .service {
+        ul li {
+            margin-top: 5px;
+            color: #777777;
+            font-size: 18px;
+            font-weight: 300;
+
+            &:first-child {
+                margin-top: 25px;
+                color: #3B68AA;
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s background-color;
+    box-shadow: -5px 5px 5px rgba($color: #000000, $alpha: .1);
+
+    &:hover {
+        background-color: #2e548d;
+    }
+}
+
+.subtitle-text {
+    margin-top: 15px;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.primary {
+    color: #ffffff;
+    background-color: #3C68AA;
+}
+
+.partner_clients {
+    text-align: center;
+
+    h1 {
+        color: #3B68AA;
+        font-size: 26px;
+        font-weight: 500;
+        margin-top: 80px;
+    }
+
+    .brand {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px rgba($color: #000000, $alpha: .1);
+
+    .logo-items {
+        h1 {
+            font-size: 21px;
+            font-weight: 500;
+            color: #3C68AA;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 200;
+            color: #000000;
+        }
+    }
+
+    .main-menu {
+        margin: 0 20px 0 140px;
+
+        ul li {
+            margin-top: 10px;
+
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 300;
+                color: #000000;
+                transition: .3s color;
+
+                &:hover, &:active, &:focus {
+                    color: #3C68AA;
+                }
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .more-menu {
+        margin: 0 20px 0 20px;
+
+        ul li {
+            margin-top: 10px;
+
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 300;
+                color: #000000;
+                transition: .3s color;
+
+                &:hover, &:active, &:focus {
+                    color: #3C68AA;
+                }
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .maps-2gis {
+        margin: 0 0 0 20px;
+    }
+}
